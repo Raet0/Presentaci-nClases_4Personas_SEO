@@ -1,0 +1,206 @@
+/* ===== RESET Y VARIABLES ===== */
+:root {
+  --color-primario: #0078d7;
+  --color-secundario: #004f9e;
+  --color-fondo: #f8f9fa;
+  --color-texto: #333;
+  --color-blanco: #fff;
+  --sombra: 0 4px 10px rgba(0,0,0,0.1);
+  --borde-suave: 10px;
+  --transicion: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+/* ===== ENCABEZADO ===== */
+header {
+  background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+  color: var(--color-blanco);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: var(--sombra);
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-blanco);
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--borde-suave);
+  transition: var(--transicion);
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== SECCIONES GENERALES ===== */
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background-color: var(--color-blanco);
+  border-radius: var(--borde-suave);
+  box-shadow: var(--sombra);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  border-left: 6px solid var(--color-primario);
+  padding-left: 0.7rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-secundario);
+}
+
+/* ===== ARTÍCULOS Y PRODUCTOS ===== */
+article {
+  margin-bottom: 1.5rem;
+}
+
+article img {
+  
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  /* max-width: 500px; */
+  border-radius: var(--borde-suave);
+  box-shadow: var(--sombra);
+  text-align : center;
+}
+
+article a {
+  display: inline-block;
+  color: var(--color-primario);
+  font-weight: bold;
+  margin-top: 0.5rem;
+  transition: var(--transicion);
+}
+
+article a:hover {
+  color: var(--color-secundario);
+}
+
+/* ===== LISTAS ===== */
+ul {
+  list-style: none;
+}
+
+section ul li {
+  margin-bottom: 1rem;
+}
+
+/* ===== FORMULARIO ===== */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+label {
+  flex-basis: 100%;
+  font-weight: bold;
+}
+
+input[type="email"] {
+  flex: 1 1 250px;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: var(--borde-suave);
+  transition: var(--transicion);
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border-color: var(--color-primario);
+  box-shadow: 0 0 6px rgba(0,120,215,0.3);
+}
+
+button {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: var(--borde-suave);
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transicion);
+}
+
+button:hover {
+  background-color: var(--color-secundario);
+}
+
+/* ===== TESTIMONIOS ===== */
+#testimonios article {
+  background-color: #f0f5ff;
+  border-left: 4px solid var(--color-primario);
+  padding: 1rem;
+  border-radius: var(--borde-suave);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button {
+    width: 100%;
+  }
+}
