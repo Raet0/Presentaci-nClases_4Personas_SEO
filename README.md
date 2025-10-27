@@ -8,11 +8,8 @@ El sitio presenta una estructura semántica, etiquetas meta optimizadas y un dis
 ---
 
 ## 🌐 **Demo en línea**
-🔗 [Ver sitio en GitHub Pages](https://tuusuario.github.io/tienda-linea-blanca/)  
-📂 [Repositorio en GitHub](https://github.com/tuusuario/tienda-linea-blanca)
-
-> *(Reemplaza los enlaces con los tuyos cuando actives GitHub Pages en la configuración del repositorio).*
-
+🔗 [Ver sitio en GitHub Pages](https://raet0.github.io/Presentaci-nClases_4Personas_SEO/)  
+📂 [Repositorio en GitHub](https://github.com/Raet0/Presentaci-nClases_4Personas_SEO.git)
 ---
 
 ## 🧩 **Descripción del Proyecto**
